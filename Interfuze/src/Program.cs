@@ -22,11 +22,6 @@ namespace Interfuze
             Dictionary<string, List<int>> mapFourHours = new Dictionary<string, List<int>>();
 
             Dictionary<string, Device> deviceMap = populateDeviceMap(devices);
-            foreach (Device device in devices)
-            {
-                if (!deviceMap.ContainsKey(device.ID))
-                    deviceMap.Add(device.ID, device);
-            }
 
             foreach (Data data in dataList)
             {
@@ -64,7 +59,7 @@ namespace Interfuze
                 }
 
                 Device device = deviceMap[key];
-                Console.WriteLine(device.ToString() + ": " + value + ": " + color);
+                Console.WriteLine(device.ToString() + ": " + color);
             }
         }
 
