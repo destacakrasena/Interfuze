@@ -51,9 +51,11 @@ namespace Interfuze
                 }
                 value = value / values.Count;
 
-                if (!isRed && value >= 10 && value < 15) {
+                if (!isRed && value >= 10 && value < 15)
+                {
                     color = "Amber";
-                } else if (!isRed && value >= 0 && value < 10)
+                }
+                else if (!isRed && value >= 0 && value < 10)
                 {
                     color = "Green";
                 }
